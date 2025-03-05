@@ -174,7 +174,11 @@ Lynx 支持多种样式功能，包括全局样式、CSS 模块、内联样式�
   defaultFile="src/FirstImageCard/index.tsx"
   img="/assets/FirstImageCard.jpeg"
   defaultEntryFile="dist/FirstImageCard.lynx.bundle"
-  highlight={{ 'src/FirstImageCard/index.tsx': '{11}' }}
+  entry="src/FirstImageCard"
+  highlight={{
+    'src/FirstImageCard/index.tsx': '{11}',
+    'src/FirstImageCard/ImageCard.tsx': '{8-12}',
+  }}
   schema="{{{url}}}?bar_color=000000&back_button_style=dark"
 />
 
@@ -196,8 +200,10 @@ Lynx 的 `<image>` 元件可以接收一个本地的相对路径作为 `src` 属
   defaultFile="src/Components/LikeIcon.tsx"
   img="/assets/LikeImageCard.gif"
   defaultEntryFile="dist/LikeImageCard.lynx.bundle"
+  entry="src/Components"
   highlight={{
     'src/LikeImageCard/index.tsx': '{9}',
+    'src/Components/LikeImageCard.tsx': '{3,14}',
     'src/Components/LikeIcon.tsx': '{7-10,13-15}',
   }}
   schema="{{{url}}}?bar_color=000000&back_button_style=dark"
@@ -252,8 +258,10 @@ Lynx 的 `<image>` 元件可以接收一个本地的相对路径作为 `src` 属
   defaultFile="src/CreateGallery/Gallery.tsx"
   img="/assets/galleryList.jpeg"
   defaultEntryFile="dist/CreateGallery.lynx.bundle"
+  entry="src/CreateGallery"
   highlight={{
     'src/CreateGallery/index.tsx': '{8}',
+    'src/CreateGallery/Gallery.tsx': '{11,19,24}',
   }}
   schema="{{{url}}}?bar_color=000000&back_button_style=dark&title=Popular Furniture&title_color=ffffff"
 />
@@ -276,6 +284,7 @@ Lynx 的 `<image>` 元件可以接收一个本地的相对路径作为 `src` 属
   example="gallery"
   defaultFile="src/AddAutoScroll/Gallery.tsx"
   img="/assets/autoScroll.gif"
+  entry="src/AddAutoScroll"
   defaultEntryFile="dist/AddAutoScroll.lynx.bundle"
   highlight={{
     'src/AddAutoScroll/Gallery.tsx': '{10,12-22,27}',
@@ -311,6 +320,7 @@ useEffect(() => {
   example="gallery"
   defaultFile="src/AddNiceScrollbar/Gallery.tsx"
   img="/assets/scrollbar.gif"
+  entry="src/AddNiceScrollbar"
   defaultEntryFile="dist/AddNiceScrollbar.lynx.bundle"
   highlight={{
     'src/AddNiceScrollbar/Gallery.tsx': '{14-19,37,45,49}',
@@ -424,9 +434,11 @@ Lynx 的最大特点是双线程架构，你可以在[这篇文档](guide/script
   example="gallery"
   defaultFile="src/ScrollbarCompare/Gallery.tsx"
   img="/assets/scrollbarCompare.gif"
+  entry="src/ScrollbarCompare"
   defaultEntryFile="dist/ScrollbarCompare.lynx.bundle"
   highlight={{
-    'src/ScrollbarCompare/Gallery.tsx': '{5,7,28,29}',
+    'src/ScrollbarCompare/Gallery.tsx': '{2,3,9,14,17-23,47,48}',
+    'src/ScrollbarCompare/NiceScrollbarMTS.tsx': '{5,10-13,19}',
   }}
   schema="{{{url}}}?bar_color=000000&back_button_style=dark&title=Popular Furniture&title_color=ffffff"
 />
